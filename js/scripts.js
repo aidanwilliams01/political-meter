@@ -8,13 +8,10 @@ window.onload = function() {
     console.log(issue1);
     console.log(issue2);
     console.log(issue3);
-    // if (issue1 < 1 || issue1 > 10 || isNaN(issue1) === true) {
-    //   document.querySelector("label#error1").innerText = "error"
-    // }
     if (issue1 > 5 && issue2 > 5 || issue3 > 5) {
       document.querySelector("p#result").innerText = "Conservative";
     }
-    else if (issue1 < 5 && issue2 < 5 || issue3 > 5) {
+    else if (issue1 < 5 && issue2 < 5 || issue3 < 5) {
       document.querySelector("p#result").innerText = "Liberal";
     }
     else if (issue3 === 5 && issue3 === 5 || issue3 === 5) {
