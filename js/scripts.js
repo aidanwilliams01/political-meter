@@ -15,9 +15,10 @@ function onPageLoad() {
       document.querySelector("p#result").innerText = "Moderate";
     }
     document.querySelector("div").setAttribute("class", "");
+    form.removeEventListener("submit", formSubmission);
   }
   form.addEventListener("submit", formSubmission);
-  // form.removeEventListener("submit", formSubmission);
+  window.removeEventListener("load", onPageLoad);
 }
 
 window.addEventListener("load", onPageLoad);
